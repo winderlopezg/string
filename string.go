@@ -1,3 +1,4 @@
+// Package text supports text based on characters ASCII.
 package string
 
 import (
@@ -5,16 +6,26 @@ import (
 	"golang.org/x/text/language"
 )
 
+// Character strings
 const (
-	lowerCase   = "abcdefghijklmnopqrstuvwxyz"
-	upperCase   = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	letters     = lowerCase + upperCase
-	digits      = "0123456789"
-	hexDigits   = "0123456789abcdefABCDEF"
-	octDigits   = "01234567"
+	// a string containing all ASCII lowercase letters
+	lowerCase = "abcdefghijklmnopqrstuvwxyz"
+	// a string containing all ASCII uppercase letters
+	upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	// // a string containing all ASCII letters
+	letters = lowerCase + upperCase
+	// a string containing all ASCII digits
+	digits = "0123456789"
+	// a string containing hexdigits
+	hexDigits = "0123456789abcdefABCDEF"
+	// a string containing "01234567"
+	octDigits = "01234567"
+	// a string containing all puntuation characters
 	punctuation = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~."
-	whiteSpace  = " \t\n\r\x0b\x0c"
-	printable   = digits + letters + punctuation + whiteSpace
+	// a string containing the characters space, tab, linefeed,retrun, and vertical tab
+	whiteSpace = " \t\n\r\x0b\x0c"
+	// a string containing all ASCII characters considered printable
+	printable = digits + letters + punctuation + whiteSpace
 )
 
 // a string containing all ASCII lowercase letters
