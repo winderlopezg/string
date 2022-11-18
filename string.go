@@ -44,6 +44,7 @@ func WhiteSpace() string { return whiteSpace }
 // a string containing all ASCII characters considered printable
 func Printable() string { return printable }
 
+// Capitalize each word
 func Capitalize(str string) string {
 
 	return cases.Title(language.Und, cases.NoLower).String(str)
